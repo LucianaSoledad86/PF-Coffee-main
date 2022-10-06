@@ -68,7 +68,7 @@ const SignIn =()=> {
             // }if ( findMailExist === authData.email || regOrInit){
             //     return  alert('This email has already been registered before! Try another !')
                         
-            }if(authData.firstName ==='' || authData.lastName===''){
+            }if(regOrInit && (authData.firstName === '' || authData.lastName === '')){
                 return  toast('Complete name and password !', {
                     position: "top-right",
                     autoClose: 3000,
