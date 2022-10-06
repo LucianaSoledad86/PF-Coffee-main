@@ -35,6 +35,10 @@ export default function CheckoutConfirm() {
   //Detalle de la compra
   const reducedCart = reduceCart(fillCart)
   //console.log('reduce.cart ', reducedCart)
+  reducedCart.forEach(p=>{
+    p.stock=p.stock - p.quantity
+  })
+  console.log('reduced cart',reducedCart)
 
   let user = userInit.id
   let total = 0
