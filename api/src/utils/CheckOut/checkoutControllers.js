@@ -28,9 +28,9 @@ checkoutControllers.pago = (req, res) => {
   
   
     back_urls: {
-      success: "https://pfcoffee-app.herokuapp.com/checkout/congrats",
-      failure: "https://pfcoffee-app.herokuapp.com/checkout/congrats",
-      pending: "https://pfcoffee-app.herokuapp.com/checkout/congrats",
+      success: "https://coffeemainapp.vercel.app/checkout/congrats",
+      failure: "https://coffeemainapp.vercel.app/checkout/congrats",
+      pending: "https://coffeemainapp.vercel.app/checkout/congrats",
     },
     auto_return: "approved",
     // auto_return: "failure",
