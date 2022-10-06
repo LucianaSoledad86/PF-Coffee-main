@@ -114,7 +114,8 @@ const SignIn =()=> {
                     id: userInfoFireBase.user.uid,
                     name: authData.firstName,
                     lastName: authData.lastName,
-                    status: 'Client',
+                    status: (userInfoFireBase?.user?.email === 
+                        'coffeshop@coderbox.com.ar' ? 'Admin' : 'Client'),
                     mail: userInfoFireBase.user.email,
                     avatar: authData.avatar
                 }
