@@ -87,7 +87,7 @@ export default function Detail(props) {
 
   const handleOnClick = () => {
     if (productToAddCart[0]?.quantity === detail.stock) {
-      return toast("❗The chosen quantity exceeds our stock", {
+      return toast("The chosen quantity exceeds our stock", {
         position: "top-right",
         autoClose: 3000,
         hideProgressBar: false,
@@ -98,7 +98,7 @@ export default function Detail(props) {
       })
     }
 
-    detail.stock = detail.stock - 1;
+    //detail.stock = detail.stock - 1;
     console.log(detail)
     //dispatch(putStock(detail))
     arrayLs.push(detail);
