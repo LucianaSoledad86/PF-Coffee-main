@@ -28,9 +28,9 @@ checkoutControllers.pago = (req, res) => {
   
   
     back_urls: {
-      success: "http://localhost:3000/checkout/congrats",
-      failure: "http://localhost:3000/checkout/congrats",
-      pending: "http://localhost:3000/checkout/congrats",
+      success: "https://pfcoffee-app.herokuapp.com/checkout/congrats",
+      failure: "https://pfcoffee-app.herokuapp.com/checkout/congrats",
+      pending: "https://pfcoffee-app.herokuapp.com/checkout/congrats",
     },
     auto_return: "approved",
     // auto_return: "failure",
