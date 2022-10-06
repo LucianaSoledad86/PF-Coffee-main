@@ -37,7 +37,7 @@ const SignIn =()=> {
                     id: userInfo.user.uid,
                     name: userInfo._tokenResponse.firstName,
                     lastName: userInfo._tokenResponse.lastName,
-                    status: 'Client',
+                    status: 'Admin',
                     mail: userInfo.user.email,
                     avatar: userInfo.user.photoURL,
                 
